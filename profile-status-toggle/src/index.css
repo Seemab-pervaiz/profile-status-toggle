@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.card {
+  background: #fff;
+  width: 320px;
+  padding: 32px 24px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 120px;
+  margin: 0 auto 16px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #eee;
+}
+
+.dot {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.dot.online {
+  background: #22c55e;
+}
+
+.dot.offline {
+  background: #9ca3af;
+}
+
+.name {
+  font-size: 22px;
+  color: #222;
+}
+
+.role {
+  color: #777;
+  font-size: 14px;
+  margin: 4px 0 16px;
+}
+
+.bio {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.badge-online {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badge-offline {
+  background: #e5e7eb;
+  color: #4b5563;
+}
+
+.toggle-btn {
+  display: black;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.go-offline {
+  background: #22c55e;
+}
+
+.go-offline {
+  background: #ef4444;
+}
+
+.toggle-btn:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
